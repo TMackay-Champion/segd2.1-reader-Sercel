@@ -24,7 +24,7 @@ sensitivity = 452; % Used to convert mV to acceleration.
 
 %%%%%% CODE %%%%%%
 % Read data
-[data_raw, time, year, julday, hour, minute, second, frequency, serialNo]=sercel_SEGD2_TMC_Jan25(filepath,'verbose',verb);
+[data_raw, time, year, julday, hour, minute, second, frequency, serialNo]=sercel_SEGD2_reader(filepath,'verbose',verb);
 
 % Convert raw data to milliVolts
 data_mV = descale * data_raw;
