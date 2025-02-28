@@ -5,6 +5,7 @@ clear; clc;
 filepath = '00013148.segd';
 verb = 'false'; % Do you want to print channel information.
 descale = 0.000269; % Used to convert raw data to millivolts. Find this value using TraceView application.
+sensitivity = 452; % Used to convert mV to acceleration.
 %%%%%%%%%%%%%%%%%
 
 %%% OUTPUTS %%%
@@ -27,4 +28,5 @@ descale = 0.000269; % Used to convert raw data to millivolts. Find this value us
 
 % Convert raw data to milliVolts
 data_mV = descale * data_raw;
+data_acc = data_mV/sensitivity;
 %%%%%%%%%%%%%%%%%%
