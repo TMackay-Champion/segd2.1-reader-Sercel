@@ -1,4 +1,4 @@
-function [trc, time, year, julday, hour, minute, second, frequency, serialNo] = sercel_SEGD2_TMC_Jan25(filein,varargin)
+function [trc, time, year, julday, hour, minute, second, frequency, serialNo] = sercel_SEGD2_reader(filein,varargin)
 % [trc t] = segd_read(filein,varargin)
 %
 % segd_read reads a SEG-D disk file. It has been tested on exactly one file
